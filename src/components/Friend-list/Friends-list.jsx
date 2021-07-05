@@ -1,17 +1,17 @@
 import React from "react";
-import { Container, Online, Offline } from "./Friend-list.style";
+import { Container, ItemFriends, Online, Offline } from "./Friend-list.style";
 
 function Friends({ friends }) {
   return (
     <Container>
       <span>
         {friends.map(({ avatar, name, isOnline, id }) => (
-          <span key={id}>
+          <ItemFriends key={id}>
             {isOnline ? <Online></Online> : <Offline></Offline>}
 
             <img src={avatar} alt="{name}" width="48" />
             <p>{name}</p>
-          </span>
+          </ItemFriends>
         ))}
       </span>
     </Container>
