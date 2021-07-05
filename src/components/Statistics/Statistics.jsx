@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Items } from "./Statistics.style";
+import { Container, Items, ItemsDrop } from "./Statistics.style";
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -9,10 +9,10 @@ const Statistics = ({ title, stats }) => {
       ) : (
         <Items>
           {stats.map((stat) => (
-            <li key={stat.id}>
+            <ItemsDrop key={stat.id}>
               <span>{stat.label}</span>
               <span>{stat.percentage}%</span>
-            </li>
+            </ItemsDrop>
           ))}
         </Items>
       )}

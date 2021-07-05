@@ -6,6 +6,7 @@ export const Profile = styled.div`
   border: brown saddlebrown;
   border: solid;
   color: darkmagenta;
+  margin-bottom: 20px;
 `;
 
 export const State = styled.ul`

@@ -1,5 +1,5 @@
 import React from "react";
-import { Profile } from "./SocialProfile.style";
+import { Profile, State } from "./SocialProfile.style";
 
 function SocialProfile({ name, tag, location, avatar, stats }) {
   return (
@@ -11,7 +11,7 @@ function SocialProfile({ name, tag, location, avatar, stats }) {
         <p class="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <State>
         <li>
           <span class="label">Followers</span>
           <span class="quantity">{stats.followers}</span>
@@ -24,7 +24,7 @@ function SocialProfile({ name, tag, location, avatar, stats }) {
           <span class="label">Likes</span>
           <span class="quantity">{stats.likes}</span>
         </li>
-      </ul>
+      </State>
     </Profile>
   );
 }
