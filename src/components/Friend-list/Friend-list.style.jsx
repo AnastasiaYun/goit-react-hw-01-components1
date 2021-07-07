@@ -1,20 +1,17 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  writing-mode: vertical-lr;
+  flex-direction: column;
   margin-top: 35px;
+`;
 
-  width: 22%;
-  height: 115px;
-  text-align: center;
+export const Span = styled.span`
   display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const ItemFriends = styled.li`
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
   &:not(:last-child) {
     margin-bottom: 10px;
